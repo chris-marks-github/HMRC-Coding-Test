@@ -30,7 +30,7 @@ public class FruitTest {
 	public void testValidFruits() {
 
 		try {
-			assertTrue(fruitCheckout.totalFruitPrice(validFruits) == 1.95D);
+			assertTrue(fruitCheckout.totalFruitPrice(validFruits) == 1.10D);
 		} catch (FruitException e) {
 			fail();
 		}
