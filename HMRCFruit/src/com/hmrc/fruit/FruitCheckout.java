@@ -16,7 +16,9 @@ public class FruitCheckout {
 		if (fruits.size() != (orangeCount + appleCount)) {
 			throw new FruitException("Foreign fruit present");
 		}
-		return orangeCount*orangePrice + appleCount*applePrice;
+		double total = orangeCount*orangePrice + appleCount*applePrice;
+		System.out.println("Total cost for " + fruits.toString() + " is " + total); 
+		return total;
 		
 	}
 	
